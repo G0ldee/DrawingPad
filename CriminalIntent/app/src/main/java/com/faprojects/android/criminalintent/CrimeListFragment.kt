@@ -8,19 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
-import kotlin.ConcurrentModificationException
 
 
 private const val TAG = "CrimeListFragment"
-
-
 
 class CrimeListFragment: Fragment() {
     //Required interface for hosting activities
@@ -56,7 +52,7 @@ class CrimeListFragment: Fragment() {
         val view = inflater.inflate(R.layout.fragment_crime_list, container, false)
         crimeRecyclerView = view.findViewById(R.id.crime_recycler_view) as RecyclerView
         crimeRecyclerView.layoutManager = LinearLayoutManager(context)
-        crimeRecyclerView.adapter = adapter
+        //crimeRecyclerView.adapter = adapter
        // updateUI()
         return view
     }
@@ -101,8 +97,6 @@ class CrimeListFragment: Fragment() {
                 View.GONE
             }
         }
-
-
 
         override fun onClick(v: View?) {
             //Toast.makeText(context, "${crime.title} pressed!", Toast.LENGTH_SHORT).show()
