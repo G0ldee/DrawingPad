@@ -43,6 +43,6 @@ class GameStatus {
             Log.d("RESETCOMBO", "I = $i ALL: ${allDrawCombo[i]} COLUMNS: ${columns[i]} ROWS: ${rows[i]}")
         }
         for (i in 0..1) diagonals[i] = false
-            Log.d("RESETCOMBO", "DIAG 1: ${diagonals[0]} DIAG 2: ${diagonals[1]}")
+        Log.d("RESETCOMBO", "DIAG 1: ${diagonals[0]} DIAG 2: ${diagonals[1]}")
     }
 }

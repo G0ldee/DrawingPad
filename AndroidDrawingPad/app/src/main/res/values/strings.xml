@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidDrawingPad</string>
+    <string name="app_title">Android\nDrawing\nApp</string>
+    <string name="start">START!</string>
+    <string name="l">L</string>
+    <string name="m">M</string>
+    <string name="s">S</string>
+    <string name="hello">Hello</string>
+</resources>
